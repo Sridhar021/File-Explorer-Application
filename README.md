@@ -17,7 +17,7 @@ The Console-Based File Explorer allows users to manage files and directories fro
 
 To set up the file explorer application, follow these steps:
 
-**1. Clone the repository:**
+**1.Clone the repository:**
     git clone https://github.com/Sridhar021/file-explorer.git
 
 **2.Navigate to the project directory:**
@@ -31,6 +31,7 @@ To set up the file explorer application, follow these steps:
 **Usage**
 To run the file explorer application, use the following command:
 ./file_explorer
+
 **Available Commands**
 List Files:
 ls
@@ -53,7 +54,7 @@ mv <sourcefile> <destinationfile>
 Search File:
 search <searchTerm>
 
-Change File PErmission:
+Change File Permission:
 chmod <filename> <mode>
 
 **Logger**
@@ -72,4 +73,4 @@ We welcome contributions to enhance the file explorer application. To contribute
 **Contacts**
 
 Sridhar
-Project Link: https://github.com/Sridhar021/file-explorer
+Project Link: https://github.com/Sridhar021/File-Explorer-Application
