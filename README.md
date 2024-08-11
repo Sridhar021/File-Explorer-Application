@@ -34,42 +34,54 @@ To run the file explorer application, use the following command:
 
 **Available Commands**
 List Files:
+
 ls
 
 Change Directory:
-cd <directory>
+
+cd directory
 
 Create File:
-touch <filename>
+
+touch filename
 
 Delete File:
-rm <filename>
+
+rm filename
 
 Copy File:
-cp <sourcefile> <destinationfile>
+
+cp sourcefile destinationfile
 
 Move or Rename File:
-mv <sourcefile> <destinationfile>
+
+mv sourcefile destinationfile
 
 Search File:
-search <searchTerm>
+
+search searchTerm
 
 Change File Permission:
-chmod <filename> <mode>
+
+chmod filename mode
 
 **Logger**
+
 We have used a logger for logging the code output to the logger file so that we can know how the code functions and what functions are being performed.
 We have used logger for INFO, DEBUG, WARNING.
 When we run the code and perform commands the output will be recorded in the logfile with the date and time of the command executed with what action it performs.
+We can check the logs in file_explorer.log file.
 
 
 **Contributing**
+
 We welcome contributions to enhance the file explorer application. To contribute:
  Fork the repository.
  Create a new branch (git checkout -b feature-branch).
  Implement your changes and commit them (git commit -am 'Add new feature').
  Push the changes to your branch (git push origin feature-branch).
  Submit a Pull Request.
+
 **Contacts**
 
 Sridhar
