@@ -1,4 +1,4 @@
-**Console-Based File Explorer**
+**File Explorer Application**
 
 This project is a console-based file explorer application developed in C++ that interfaces with the Linux operating system to manage files and directories. It provides a command-line interface to perform common file operations such as listing, creating, deleting, and navigating through directories.
 
@@ -24,32 +24,43 @@ To set up the file explorer application, follow these steps:
     cd file-explorer
     
 **3.Compile the application:**
-    g++ -o file_explorer main.cpp
+    We have a Makefile for the project so to compile we can use the Makefile.
+    Run makefile using command:
+    make
 
 **Usage**
 To run the file explorer application, use the following command:
 ./file_explorer
 **Available Commands**
 List Files:
-./file_explorer ls
+ls
 
 Change Directory:
-./file_explorer cd <directory>
+cd <directory>
 
 Create File:
-./file_explorer touch <filename>
+touch <filename>
 
 Delete File:
-./file_explorer rm <filename>
+rm <filename>
 
-Create Directory:
-./file_explorer mkdir <directory>
+Copy File:
+cp <sourcefile> <destinationfile>
 
-Delete Directory:
-./file_explorer rmdir <directory>
+Move or Rename File:
+mv <sourcefile> <destinationfile>
 
-For detailed usage instructions, refer to the documentation provided within the application or consult the help command:
-./file_explorer --help
+Search File:
+search <searchTerm>
+
+Change File PErmission:
+chmod <filename> <mode>
+
+**Logger**
+We have used a logger for logging the code output to the logger file so that we can know how the code functions and what functions are being performed.
+We have used logger for INFO, DEBUG, WARNING.
+When we run the code and perform commands the output will be recorded in the logfile with the date and time of the command executed with what action it performs.
+
 
 **Contributing**
 We welcome contributions to enhance the file explorer application. To contribute:
