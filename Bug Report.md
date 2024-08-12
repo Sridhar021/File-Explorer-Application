@@ -3,10 +3,15 @@
 **1.Bug Report**
 
 Title: changeDirectory Function Does Not Correctly Handle Relative Paths (e.g., "..")
+
 Reported By: Sridhar, Sri Mounika
+
 Date: August 10, 2024
+
 Severity: Medium
+
 Priority: High
+
 Status: Open
 
 **Description**:
@@ -16,8 +21,11 @@ The changeDirectory function is designed to change the current working directory
 **Steps to Reproduce:**
 
 Start in a directory with at least one parent directory.
+
 Execute the changeDirectory function with ".." as the argument.
+
 After changing the directory, attempt to list the files using the listFiles function.
+
 Observe that the directory is not correctly set to the parent directory, or an error occurs.
 
 **Expected Behavior:**
@@ -39,16 +47,23 @@ Modify the changeDirectory function to check if the input path is a relative pat
 **Resolution:**
 
 Resolution Date: August 11,2024
+
 Resolved By: Sridhar,Srimounika
+
 Resolution Description: Change the code to fix error
 
 **2.Bug Report**
 
 Title: Incorrect Application of Permissions in changePermissions Function
+
 Reported By: Sridhar, Sri Mounika
+
 Date: August 10, 2024
+
 Severity: Medium
+
 Priority: High
+
 Status: Open
 
 **Description:**
@@ -58,7 +73,9 @@ The changePermissions function is designed to modify the permissions of a file o
 **Steps to Reproduce:**
 
 Create a file named example.txt with initial permissions set to 0644 (rw-r--r--).
+
 Call the changePermissions function with the following input: changePermissions("example.txt", 0700);.
+
 Observe that the permissions are set to 0700 (rwx------), overriding the original group and others permissions.
 
 **Expected Behavior:**
@@ -81,16 +98,24 @@ Modify the function to first read the existing permissions of the file, then app
 **Resolution:**
 
 Resolution Date: August 11,2024
+
 Resolved By: Sridhar,Srimounika
+
 Resolution Description: modify the code to overcome error
+
 
 **3.Bug Report**
 
 Title: changeDirectory Function Incorrectly Handles ".." for Changing to Parent Directory
+
 Reported By: Sridhar, Sri Mounika
+
 Date: August 10, 2024
+
 Severity: Medium
+
 Priority: High
+
 Status: Open
 
 **Solution:**
@@ -100,16 +125,22 @@ The issue was fixed by updating the changeDirectory function to properly handle 
 **Resolution:**
 
 Resolution Date: August 11,2024
+
 Resolved By: Sridhar
 
 
 **4.Bug Report**
 
 Title: SearchFile does not work recursively
+
 Reported By: Sridhar, Sri Mounika
+
 Date Reported: August 10, 2024
+
 Severity: Medium
+
 Priority: High
+
 Status: Open
 
 **Description:**
@@ -119,7 +150,9 @@ The SearchFile function in the file explorer application is failing to search fo
 **Steps to Reproduce:**
 
 Launch the file explorer application.
+
 Use the SearchFile function to search for a file name within a directory that contains subdirectories.
+
 Observe that the search does not find files located in subdirectories.
 
 **Expected Result:**
@@ -137,5 +170,6 @@ Modify the function to first read the existing permissions of the file, then app
 **Resolution:**
 
 Resolution Date: August 11,2024
+
 Resolved By: Sridhar
 
